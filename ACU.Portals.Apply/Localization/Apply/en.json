@@ -1,0 +1,15 @@
+{
+  "culture": "en",
+  "texts": {
+    "Welcome_Title": "Welcome!",
+    "Application_Name": "Admission Portal",
+    "Welcome_Text": "You are welcome to ACU admission portal. If you are new on this portal, please feel free to create and activate your account. This will enable ACU to keep you posted of upcoming admission exercise(s) and also enable you apply for any programme of your choice.<br/><br/>  The following programmes are accepting application for 2022/2023 academic session.<br/><br/> Have you signed up before?, Please <a href=\"\\Account\\Login\">Login Now</a> ",
+    "Password_Reset_Intro": " To reset your portal password, click on FORGOT PASSWORD. Enter the registered email address and you will receive a password link in your registered email address. Click on RESET PASSWORD link in your email and create a new password and submit. Note:This is the only available option to reset your password incase you forgot your password.",
+    "Check_Admission_Intro": "Click to check <a href=\"\\Account\\Login\">Admission Status(UTME, MBA, Sandwich, JUPEB, Post Graduate and Part Time )</a>",
+    "Menu:Home": "Home",
+    "Application_Action": "APPLY NOW",
+    "LoginInfoHeader": "Important Information",
+    "LoginInfoBody": "You are to log in with your registered email and password. If you have not clicked the link in the activating email sent to you earlier, please do so before logging in. If you have not created an account before or did not receive the activation email, please click the create account button below:",
+    "Register": "Create Account"
+  }
+}

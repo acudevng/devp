@@ -1,0 +1,129 @@
+﻿@page
+@using Microsoft.AspNetCore.Authorization
+@using Microsoft.AspNetCore.Mvc.Localization
+@using Volo.Abp.AspNetCore.Mvc.UI.Theming
+@using ACU.Portals.Apply.Localization
+@inject IHtmlLocalizer<ApplyResource> L
+@inject Volo.Abp.AspNetCore.Mvc.UI.Theming.IThemeManager ThemeManager
+@*@attribute [Authorize]*@
+@if (User.Identity.IsAuthenticated)
+{
+    {
+        Layout = "~/Themes/Basic/Layouts/application.cshtml";
+    }
+}
+else
+{
+    {
+        Layout = "~/Themes/Basic/Layouts/public.cshtml";
+    }
+}
+
+
+
+
+@section styles {
+    <abp-style src="/Pages/Index.cshtml.css" />
+}
+@section scripts {
+    <abp-script src="/Pages/Index.cshtml.js" />
+}
+<div class="container">
+    <abp-card style="background-color:#BEDCF4 ">
+        <abp-card-header>
+            <abp-card-title>
+                <h2 class="w-100 mb-5 my-md-3 center" style="color: #0A1172">@L["Application_Name"]</h2>
+            </abp-card-title>
+        </abp-card-header>
+        <abp-card-body>
+
+            <h3 style="color:#B29050">@L["Welcome_Title"]</h3>
+
+
+            
+            <br /><br />
+            <div style="background-color: #0A1172;color:white">@L["Password_Reset_Intro"]</div>
+            <br /><br />
+            @L["Check_Admission_Intro"]
+
+        </abp-card-body>
+    </abp-card>
+    <div>
+        <div class="row">
+            <div class="col-lg-4 col-8">
+                <!-- small box -->
+                <div class="small-box " style="background-color: #0A1172;color:white">
+                    <div class="inner">
+                        <h5>Undergraduate Application </h5>
+                    </div>
+
+                    <a href="#" class="small-box-footer">@L["Application_Action"] <i class="fas fa-arrow-circle-right"></i></a>
+                </div>
+            </div>
+            <!-- ./col -->
+            <div class="col-lg-4 col-8">
+                <!-- small box -->
+                <div class="small-box" style="background-color: #0A1172;color:white">
+                    <div class="inner">
+                        <h5>Part-Time Application</h5>
+                    </div>
+
+                    <a href="#" class="small-box-footer">@L["Application_Action"] <i class="fas fa-arrow-circle-right"></i></a>
+                </div>
+            </div>
+            <!-- ./col -->
+            <div class="col-lg-4 col-8">
+                <!-- small box -->
+                <div class="small-box" style="background-color: #0A1172;color:white">
+                    <div class="inner">
+                        <h5>Post Graduate Appplication</h5>
+
+
+                    </div>
+
+                    <a href="#" class="small-box-footer">@L["Application_Action"] <i class="fas fa-arrow-circle-right"></i></a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-lg-4 col-8">
+                <!-- small box -->
+                <div class="small-box " style="background-color: #0A1172;color:white">
+                    <div class="inner">
+                        <h5>Sandwich Application </h5>
+                    </div>
+
+                    <a href="#" class="small-box-footer">@L["Application_Action"] <i class="fas fa-arrow-circle-right"></i></a>
+                </div>
+            </div>
+            <!-- ./col -->
+            <div class="col-lg-4 col-8">
+                <!-- small box -->
+                <div class="small-box" style="background-color: #0A1172;color:white">
+                    <div class="inner">
+                        <h5>JUBEP Application</h5>
+                    </div>
+
+                    <a href="#" class="small-box-footer">@L["Application_Action"] <i class="fas fa-arrow-circle-right"></i></a>
+                </div>
+            </div>
+            <!-- ./col -->
+            <div class="col-lg-4 col-8">
+                <!-- small box -->
+                <div class="small-box" style="background-color: #0A1172;color:white">
+                    <div class="inner">
+                        <h5>MBA Appplication</h5>
+
+
+                    </div>
+
+                    <a href="#" class="small-box-footer">@L["Application_Action"] <i class="fas fa-arrow-circle-right"></i></a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,1 @@
+dotnet run --project ACU.Portals.Apply --migrate-database

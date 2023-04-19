@@ -1,0 +1,11 @@
+﻿@page
+@using Microsoft.AspNetCore.Authorization
+@using Microsoft.AspNetCore.Mvc.Localization
+@using Volo.Abp.AspNetCore.Mvc.UI.Theming
+@using ACU.Portals.Apply.Localization
+@inject IHtmlLocalizer<ApplyResource> L
+@inject Volo.Abp.AspNetCore.Mvc.UI.Theming.IThemeManager ThemeManager
+@attribute [Authorize]
+@{
+        Layout = "~/Themes/Basic/Layouts/application.cshtml";
+}
