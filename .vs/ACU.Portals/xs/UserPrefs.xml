@@ -1,0 +1,46 @@
+﻿<Properties StartupConfiguration="{64430A23-E2E0-471D-B9F9-31E4E4C834E8}|Default">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.ACU.Portals.Apply PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="ACU.Portals.Apply/Entities/LGA.cs">
+    <Files>
+      <File FileName="ACU.Portals.Apply/Data/ApplyDbContext.cs" />
+      <File FileName="ACU.Portals.Apply/Enum/ApplicationStatus.cs" />
+      <File FileName="ACU.Portals.Apply/Enum/Gender.cs" />
+      <File FileName="ACU.Portals.Apply/Enum/MaritalStatus.cs" />
+      <File FileName="ACU.Portals.Apply/Localization/Apply/en.json" />
+      <File FileName="ACU.Portals.Apply/Menus/ApplyMenuContributor.cs" />
+      <File FileName="ACU.Portals.Apply/Entities/AcademicDetails.cs" />
+      <File FileName="ACU.Portals.Apply/Entities/AddressDetails.cs" />
+      <File FileName="ACU.Portals.Apply/Entities/ApplicationUpload.cs" />
+      <File FileName="ACU.Portals.Apply/Entities/Country.cs" />
+      <File FileName="ACU.Portals.Apply/Entities/CountryState.cs" />
+      <File FileName="ACU.Portals.Apply/Entities/ExtraStudentDetails.cs" />
+      <File FileName="ACU.Portals.Apply/Entities/LGA.cs" Line="1" Column="1" />
+      <File FileName="ACU.Portals.Apply/Entities/Payment.cs" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="ACU.Portals" expanded="True">
+            <Node name="ACU.Portals.Apply" expanded="True">
+              <Node name="Data" expanded="True" />
+              <Node name="Entities" expanded="True">
+                <Node name="LGA.cs" selected="True" />
+              </Node>
+              <Node name="Pages" expanded="True">
+                <Node name="Account" expanded="True" />
+                <Node name="Applications" expanded="True" />
+                <Node name="Support" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+</Properties>

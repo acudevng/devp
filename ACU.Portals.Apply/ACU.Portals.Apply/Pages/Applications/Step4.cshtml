@@ -1,0 +1,86 @@
+﻿@page
+@using Microsoft.AspNetCore.Authorization
+@using Microsoft.AspNetCore.Mvc.Localization
+@using Volo.Abp.AspNetCore.Mvc.UI.Theming
+@using ACU.Portals.Apply.Localization
+@inject IHtmlLocalizer<ApplyResource> L
+@inject Volo.Abp.AspNetCore.Mvc.UI.Theming.IThemeManager ThemeManager
+@attribute [Authorize]
+@{
+    Layout = "~/Themes/Basic/Layouts/application.cshtml";
+}
+@model ACU.Portals.Apply.Models.Applications.Step4ViewModel
+
+<div class="container">
+
+
+    <div class="card card-primary">
+        <div class="card-header">
+            <h3 class="card-title">Credential Upload</h3>
+        </div>
+        <!-- /.card-header -->
+        <!-- form start -->
+        <form>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="exampleInputFile">Upload your O-Level</label>
+                            <div class="input-group">
+                                <div class="custom-file">
+                                    <input type="file" class="custom-file-input" asp-for="@Model.OLevelFirstSittingFile">
+                                    <label class="custom-file-label" asp-for="@Model.OLevelFirstSittingFile">Choose file</label>
+                                </div>
+                                <div class="input-group-append">
+                                    <span class="input-group-text">Upload</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!--second column-->
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="exampleInputFile">Upload 2nd Sitting(Optional)</label>
+                            <div class="input-group">
+                                <div class="custom-file">
+                                    <input type="file" class="custom-file-input" asp-for="@Model.OLevelSecondSittingFile">
+                                    <label class="custom-file-label" asp-for="@Model.OLevelSecondSittingFile">Choose file</label>
+                                </div>
+                                <div class="input-group-append">
+                                    <span class="input-group-text">Upload</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!--end second column-->
+                    <!-- third column-->
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label asp-for="@Model.StateOfOriginFile">State of Origin Certificate</label>
+                            <div class="input-group">
+                                <div class="custom-file">
+                                    <input type="file" class="custom-file-input" asp-for="@Model.StateOfOriginFile">
+                                    <label class="custom-file-label" asp-for="@Model.StateOfOriginFile">Choose file</label>
+                                </div>
+                                <div class="input-group-append">
+                                    <span class="input-group-text">Upload</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- end third column-->
+
+                </div>
+
+            </div>
+            <!-- /.card-body -->
+
+            <div class="card-footer">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </form>
+    </div>
+</div>

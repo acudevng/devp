@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "tzff/kkGLHSfX11QjFT58XSJAr6zrsyd/IlTPubZsCU2PUmngcwWC1ebZ6QVjQTevpUYl70rkMCgcIRvULr2hQ==",
+  "dgSpecHash": "l5rADwhuzUGzdG/MPQai0nTXZT6ye+XRUnGbKr818jbsa1TVOL2xF22ihd9SGFExtADxS6hg2BT5pSf+QwdZng==",
   "success": true,
-  "projectFilePath": "/Users/apple/Projects/ACU.Portals.Apply/ACU.Portals.Apply/ACU.Portals.Apply.csproj",
+  "projectFilePath": "/Users/apple/Projects/devp/ACU.Portals/ACU.Portals.Apply/ACU.Portals.Apply.csproj",
   "expectedPackageFiles": [
     "/Users/apple/.nuget/packages/autofac/6.4.0/autofac.6.4.0.nupkg.sha512",
     "/Users/apple/.nuget/packages/autofac.extensions.dependencyinjection/8.0.0/autofac.extensions.dependencyinjection.8.0.0.nupkg.sha512",

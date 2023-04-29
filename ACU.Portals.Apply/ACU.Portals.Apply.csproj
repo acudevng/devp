@@ -367,6 +367,7 @@
     <None Remove="Pages\Payment\" />
     <None Remove="Pages\Support\" />
     <None Remove="Pages\Applications\" />
+    <None Remove="Policies\" />
   </ItemGroup>
 
   <ItemGroup>
@@ -390,5 +391,6 @@
     <Folder Include="Themes\Basic\Components\" />
     <Folder Include="Pages\Support\" />
     <Folder Include="Pages\Applications\" />
+    <Folder Include="Policies\" />
   </ItemGroup>
 </Project>

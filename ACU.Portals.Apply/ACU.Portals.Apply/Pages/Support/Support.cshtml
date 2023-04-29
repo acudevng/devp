@@ -1,0 +1,73 @@
+﻿@page
+@using Microsoft.AspNetCore.Authorization
+@using Microsoft.AspNetCore.Mvc.Localization
+@using Volo.Abp.AspNetCore.Mvc.UI.Theming
+@using ACU.Portals.Apply.Localization
+@inject IHtmlLocalizer<ApplyResource> L
+@inject Volo.Abp.AspNetCore.Mvc.UI.Theming.IThemeManager ThemeManager
+@attribute [Authorize]
+@{
+    Layout = "~/Themes/Basic/Layouts/application.cshtml";
+}
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">Create Support Ticket Instruction</h3>
+                </div>
+                <div class="card-body">
+                    <p>Welcome to the Support Ticket Page. The following are the steps to follow:</p>
+                    <p>1. Select portal e.g apply or transcript or undergrate portal</p>
+                    <p>2. Select application e.g PDS, JUP, Post graduate or Post UTME registration</p>
+                    <p>3. Select category of complains e.g payment, or biodata or course registration</p>
+</p>                <p> 4. Enter the subject for the complain</p>  
+                    <p>5. Enter details of what happened and what you are requesting for.</p>
+                    <p>6. if there is any image for clarification please upload. Note. It is optional NOT complusory</p>
+                    <p>7. Click on Submit button</p>
+                    <p>8. You will receive ticket confirmation in your email address. And you are to wait patiently for the complain to be processed within 48-hours </p> 
+                    <p>NOTE: DO NOT OPEN MULTIPLE TICKETS ON A SINGLE ISSUE</p>
+                </div>
+            </div>
+         </div>
+            <div class="col-md-8">
+
+                <div class="card card-primary">
+                    <div class="card-header">
+                        <h3 class="card-title">Create New Ticket</h3>
+                    </div>
+                    <!-- /.card-header -->
+                    <!-- form start -->
+                    <form>
+                        <div class="card-body">
+
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Portal</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Application</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Enter your Complaint</label>
+                                <textarea type="text" class="form-control" id="exampleInputPassword1" placeholder="Enter your Complaint"></textarea>
+                            </div>
+                            <div class="form-group">
+                                @*<label for="customFile" class="custom-file-label" >Choose file</label>*@
+                                <input type="file" class="form-control" id="customFile">
+
+                            </div>
+
+                        </div>
+                        <div class="card-footer">
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+            <!-- /.card-body -->
+
+        </div>
+    </div>
