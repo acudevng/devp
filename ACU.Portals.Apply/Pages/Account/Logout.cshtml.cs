@@ -28,7 +28,7 @@ namespace ACU.Portals.Apply.Pages.Account
                 return RedirectSafely(ReturnUrl, ReturnUrlHash);
             }
 
-            return RedirectToPage("~/Index");
+            return RedirectToPage("/");
         }
 
         public virtual Task<IActionResult> OnPostAsync()

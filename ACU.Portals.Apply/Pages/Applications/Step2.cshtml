@@ -9,6 +9,7 @@
 @{
     Layout = "~/Themes/Basic/Layouts/application.cshtml";
 }
+@model ACU.Portals.Apply.Pages.Applications.Step2Model
 <div class="container">
 
 
@@ -23,55 +24,53 @@
                 <div class="row">
                     <div class="col-md-4">
                         <div class="form-group">
-                            <label for="exampleInputEmail1">Residential Address</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                            <abp-input asp-for="Step2.ResidentialAddress" />
                         </div>
                         <div class="form-group">
-                            <label for="exampleInputPassword1">Phone No</label>
-                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                            <abp-input asp-for="Step2.Phone" />
+                          
                         </div>
                         <div class="form-group">
-                            <label for="exampleInputPassword1">Contact Address</label>
-                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                            <abp-input asp-for="Step2.ContactAddress" />
+                          
                         </div>
                         <div class="form-group">
-                            <label for="exampleInputPassword1">Parents Email</label>
-                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                            <abp-input asp-for="Step2.ParentEmail" />
                         </div>
 
                     </div>
                     <!--second column-->
                     <div class="col-md-4">
                         <div class="form-group">
-                            <label for="exampleInputEmail1">Postal Address</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                            <abp-input asp-for="Step2.PostalAddress" />
+                           
                         </div>
                         <div class="form-group">
-                            <label for="exampleInputPassword1">Denomination</label>
-                            <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Password">
+
+                            <abp-input asp-for="Step2.Denomination" />
                         </div>
                         <div class="form-group">
-                            <label for="exampleInputPassword1">Father Phone No</label>
-                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                            <abp-input asp-for="Step2.FatherPhone" />
+                           
                         </div>
-                       
+
                     </div>
                     <!--end second column-->
                     <!-- third column-->
                     <div class="col-md-4">
                         <div class="form-group">
-                            <label for="exampleInputEmail1">Email Address</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                            <abp-input asp-for="Step2.Email" />
+                            
                         </div>
                         <div class="form-group">
-                            <label for="exampleInputPassword1">Parent Full Name</label>
-                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                            <abp-input asp-for="Step2.ParentFullName" />
+                          
                         </div>
                         <div class="form-group">
-                            <label for="exampleInputPassword1">Mother Phone No</label>
-                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                        </div>
+                            <abp-input asp-for="Step2.MotherPhone" />
                         
+                        </div>
+
                     </div>
                     <!-- end third column-->
                 </div>

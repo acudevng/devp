@@ -2,6 +2,5 @@
 {
     public interface IPaymentGateway
     {
-        Task<PaymentResultDto> ProcessPaymentAsync(PaymentRequestDto paymentRequest);
     }
 }

@@ -1,3 +1,3 @@
 ﻿$.widget.bridge('uibutton', $.ui.button)
 //console.
-console.log('this is working nketchi');
+//console.log('this is working nketchi');

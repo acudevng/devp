@@ -1,4 +1,5 @@
-﻿@using Microsoft.Extensions.Localization
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@using Microsoft.Extensions.Localization
 @using Microsoft.Extensions.Options
 @using Volo.Abp.AspNetCore.MultiTenancy
 @using Volo.Abp.AspNetCore.Mvc.UI.Components.LayoutHook
@@ -41,7 +42,7 @@
     {
         <meta name="description" content="@(ViewBag.Description as string)" />
     }
-    <abp-style-bundle name="@BasicThemeBundles.Styles.Global" />
+    <abp-style-bundle name="@BasicThemeBundles.Styles.Global" ></abp-style-bundle>
 
     @await RenderSectionAsync("styles", false)
 
@@ -58,8 +59,8 @@
         <abp-row class="justify-content-center">
             <abp-column class="col md-8" style="max-width: 640px">
                 @if (MultiTenancyOptions.Value.IsEnabled &&
-                 (TenantResolveResultAccessor.Result?.AppliedResolvers?.Contains(CookieTenantResolveContributor.ContributorName) == true ||
-                  TenantResolveResultAccessor.Result?.AppliedResolvers?.Contains(QueryStringTenantResolveContributor.ContributorName) == true))
+                (TenantResolveResultAccessor.Result?.AppliedResolvers?.Contains(CookieTenantResolveContributor.ContributorName) == true ||
+                 TenantResolveResultAccessor.Result?.AppliedResolvers?.Contains(QueryStringTenantResolveContributor.ContributorName) == true))
                 {
                     <div class="card shadow-sm rounded mb-3">
                         <div class="card-body px-5">

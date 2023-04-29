@@ -1,8 +1,10 @@
 ﻿using System;
+using Volo.Abp.Domain.Entities.Auditing;
+
 namespace ACU.Portals.Apply.Entities
 {
-	public class ExtraStudentDetails
-	{
+	public class ExtraStudentDetails: AuditedEntity<long>
+    {
         public string? Denomination { get; set; }
         public string? ParentName { get; set; }
         public string? FatherPhone { get; set; }

@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="../buildMultiTargeting/ACU.Portals.Apply.props" />
-</Project>

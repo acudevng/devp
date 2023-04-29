@@ -7,5 +7,58 @@
 @inject Volo.Abp.AspNetCore.Mvc.UI.Theming.IThemeManager ThemeManager
 @attribute [Authorize]
 @{
-        Layout = "~/Themes/Basic/Layouts/application.cshtml";
+    Layout = "~/Themes/Basic/Layouts/Extra1.cshtml";
+
+@using Volo.Abp.Account.Localization
+@using Volo.Abp.Account.Settings
+@using Volo.Abp.Settings
+
+
+@inject IHtmlLocalizer<AccountResource> L
+@inject IHtmlLocalizer<ApplyResource> L2
+@inject Volo.Abp.Settings.ISettingProvider SettingProvider
+<!-- icheck bootstrap -->
+<link rel="stylesheet" href="~/plugins/icheck-bootstrap/icheck-bootstrap.css">
+
+
+
+
+    <div class="card-deck">
+
+        <abp-card style="background: #d1e3f3; margin-right: 0px; border-top-right-radius: 0px; border-bottom-right-radius:0px ">
+            <abp-card-body>
+
+                <form method="post">
+                    <h3 style="text-align:center;">Payment Page</h3>
+                    <h6 class="bg-warn" style="text-align:center;color:red">PLEASE NOTE, PAYMENT MADE IN ERROR CANNOT BE REFUNDED.</h6>
+
+                    <div>
+                        <p>Transaction reference:</p>
+                        <p>Name:</p>
+                        <p>Payment Narration:</p>
+                    </div>
+
+                    <div>
+                        <p>Payment Summary</p>
+                        <p>Application Fee:</p>
+                        <p>Transaction Fee</p>
+                        <p style="font-weight:bold">Total Fee:</p>
+                    </div>
+
+                    <abp-button button-type="Primary" type="submit" class="btn-lg btn-block mt-4">Pay Now</abp-button>
+
+
+
+
+                </form>
+            </abp-card-body>
+        </abp-card>
+      
+    </div>
+
+  
+
+
+
 }
+

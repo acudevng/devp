@@ -24,6 +24,7 @@ using SignInResult = Microsoft.AspNetCore.Identity.SignInResult;
 
 namespace ACU.Portals.Apply.Pages.Account
 {
+    [AutoValidateAntiforgeryToken]
     public class LoginModel : AccountPageModel
     {
         [HiddenInput]
@@ -81,6 +82,7 @@ namespace ACU.Portals.Apply.Pages.Account
             return Page();
         }
 
+        
         public virtual async Task<IActionResult> OnPostAsync(string action)
         {
             await CheckLocalLoginAsync();

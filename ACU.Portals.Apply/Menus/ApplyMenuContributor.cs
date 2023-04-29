@@ -32,6 +32,59 @@ public class ApplyMenuContributor : IMenuContributor
             )
         );
 
+        context.Menu.Items.Insert(
+          1,
+          new ApplicationMenuItem(
+              ApplyMenus.PaymentHistory,
+              l["Menu:PaymentHistory"],
+              "/ACUPay/PayHistory",
+              //icon: "fas fa-home",
+              order: 1
+          )
+      );
+
+        context.Menu.Items.Insert(
+          2,
+          new ApplicationMenuItem(
+              ApplyMenus.Support,
+              l["Menu:Support"],
+              "/Support/Support",
+              //icon: "fas fa-home",
+              order: 2
+          )
+      );
+
+        context.Menu.Items.Insert(
+          3,
+          new ApplicationMenuItem(
+              ApplyMenus.PasswordChange,
+              l["Menu:PasswordChange"],
+              "/Account/ForgotPassword",
+              //icon: "fas fa-home",
+              order: 3
+          )
+      );
+        context.Menu.Items.Insert(
+         4,
+         new ApplicationMenuItem(
+             ApplyMenus.Biodata,
+             l["Menu:Biodata"],
+             "/Applications/Step1",
+             //icon: "fas fa-home",
+             order: 4
+         )
+     );
+        context.Menu.Items.Insert(
+         5,
+         new ApplicationMenuItem(
+             ApplyMenus.Logout,
+             l["Menu:Logout"],
+             "/Account/Logout",
+             //icon: "fas fa-home",
+             order: 5
+         )
+     );
+
         if (ApplyModule.IsMultiTenant)
         {
             administration.SetSubItemOrder(TenantManagementMenuNames.GroupName, 1);

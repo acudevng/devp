@@ -11142,14 +11142,14 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/apple/Projects/devp/ACU.Portals/ACU.Portals.Apply/ACU.Portals.Apply.csproj",
+      "projectUniqueName": "/Users/apple/Projects/ACU.Portals.Apply/ACU.Portals.Apply/ACU.Portals.Apply.csproj",
       "projectName": "ACU.Portals.Apply",
-      "projectPath": "/Users/apple/Projects/devp/ACU.Portals/ACU.Portals.Apply/ACU.Portals.Apply.csproj",
+      "projectPath": "/Users/apple/Projects/ACU.Portals.Apply/ACU.Portals.Apply/ACU.Portals.Apply.csproj",
       "packagesPath": "/Users/apple/.nuget/packages/",
-      "outputPath": "/Users/apple/Projects/devp/ACU.Portals/ACU.Portals.Apply/obj/",
+      "outputPath": "/Users/apple/Projects/ACU.Portals.Apply/ACU.Portals.Apply/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/apple/Projects/devp/ACU.Portals/NuGet.Config",
+        "/Users/apple/Projects/ACU.Portals.Apply/NuGet.Config",
         "/Users/apple/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
@@ -11348,7 +11348,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.202/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.203/RuntimeIdentifierGraph.json"
       }
     }
   }

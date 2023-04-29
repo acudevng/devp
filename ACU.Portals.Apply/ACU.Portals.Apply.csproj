@@ -88,7 +88,6 @@
     <Content Remove="Localization\Apply\*.json" />
     <EmbeddedResource Include="Localization\Apply\*.json" />
     <Content Remove="wwwroot\AdminLTE\" />
-    <Content Remove="wwwroot\AdminLTE\Account0.cshtml" />
     <Content Remove="wwwroot\libs\abp\luxon\abp.luxon.js" />
     <Content Remove="wwwroot\libs\bootstrap-datepicker\locales\bootstrap-datepicker.cy.min.js" />
     <Content Remove="wwwroot\libs\bootstrap-datepicker\locales\bootstrap-datepicker.uk.min.js" />
@@ -354,7 +353,6 @@
     <Content Remove="wwwroot\libs\datatables.net\js\jquery.dataTables.js" />
     <Content Remove="wwwroot\libs\datatables.net-bs5\css\dataTables.bootstrap5.css" />
     <Content Remove="wwwroot\libs\datatables.net-bs5\js\dataTables.bootstrap5.js" />
-    <Content Remove="Pages\Account\Login %28copy%29.cshtml" />
   </ItemGroup>
 
   <ItemGroup>
@@ -362,12 +360,20 @@
     <Content Remove="Logs\**" />
     <EmbeddedResource Remove="Logs\**" />
     <None Remove="Logs\**" />
-    <None Remove="Themes\Basic\Components\" />
-    <Compile Remove="Pages\Account\Login %28copy%29.cshtml.cs" />
-    <None Remove="Pages\Payment\" />
-    <None Remove="Pages\Support\" />
-    <None Remove="Pages\Applications\" />
-    <None Remove="Policies\" />
+    <None Remove="Models\" />
+    <None Remove="Models\ACUPay\" />
+    <None Remove="Models\Applications\" />
+    <None Remove="Models\Support\" />
+    <None Remove="Services\Interfaces\" />
+    <None Remove="Services\Dtos\AcademicDetails\" />
+    <None Remove="Services\Dtos\AddressDetails\" />
+    <None Remove="Services\Dtos\ApplicationUpload\" />
+    <None Remove="Services\Dtos\Country\" />
+    <None Remove="Services\Dtos\CountryState\" />
+    <None Remove="Services\Dtos\ExtraStudentDetails\" />
+    <None Remove="Services\Dtos\LGA\" />
+    <None Remove="Services\Dtos\StudentApplication\" />
+    <None Remove="Services\Dtos\StudentDetails\" />
   </ItemGroup>
 
   <ItemGroup>
@@ -391,6 +397,19 @@
     <Folder Include="Themes\Basic\Components\" />
     <Folder Include="Pages\Support\" />
     <Folder Include="Pages\Applications\" />
-    <Folder Include="Policies\" />
+    <Folder Include="Models\" />
+    <Folder Include="Models\ACUPay\" />
+    <Folder Include="Models\Applications\" />
+    <Folder Include="Models\Support\" />
+    <Folder Include="Services\Interfaces\" />
+    <Folder Include="Services\Dtos\AcademicDetails\" />
+    <Folder Include="Services\Dtos\AddressDetails\" />
+    <Folder Include="Services\Dtos\ApplicationUpload\" />
+    <Folder Include="Services\Dtos\Country\" />
+    <Folder Include="Services\Dtos\CountryState\" />
+    <Folder Include="Services\Dtos\ExtraStudentDetails\" />
+    <Folder Include="Services\Dtos\LGA\" />
+    <Folder Include="Services\Dtos\StudentApplication\" />
+    <Folder Include="Services\Dtos\StudentDetails\" />
   </ItemGroup>
 </Project>

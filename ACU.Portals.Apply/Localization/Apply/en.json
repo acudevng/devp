@@ -7,7 +7,13 @@
     "Password_Reset_Intro": " To reset your portal password, click on FORGOT PASSWORD. Enter the registered email address and you will receive a password link in your registered email address. Click on RESET PASSWORD link in your email and create a new password and submit. Note:This is the only available option to reset your password incase you forgot your password.",
     "Check_Admission_Intro": "Click to check <a href=\"\\Account\\Login\">Admission Status(UTME, MBA, Sandwich, JUPEB, Post Graduate and Part Time )</a>",
     "Menu:Home": "Home",
+    "Menu:PaymentHistory": "Payment History",
+    "Menu:Support": "Support",
+    "Menu:PasswordChange": "Change Password",
+    "Menu:Biodata": "Biodata",
+    "Menu:Logout": "Logout",
     "Application_Action": "APPLY NOW",
+    "Login_Application_Action": "APPLY NOW",
     "LoginInfoHeader": "Important Information",
     "LoginInfoBody": "You are to log in with your registered email and password. If you have not clicked the link in the activating email sent to you earlier, please do so before logging in. If you have not created an account before or did not receive the activation email, please click the create account button below:",
     "Register": "Create Account"

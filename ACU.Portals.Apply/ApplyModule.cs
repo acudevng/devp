@@ -49,8 +49,6 @@ using Volo.Abp.UI.Navigation.Urls;
 using Volo.Abp.Validation.Localization;
 using Volo.Abp.VirtualFileSystem;
 using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
-using ACU.Portals.Apply.Policies;
-using Microsoft.AspNetCore.Authorization;
 
 namespace ACU.Portals.Apply;
 
@@ -112,9 +110,6 @@ public class ApplyModule : AbpModule
 
     public override void PreConfigureServices(ServiceConfigurationContext context)
     {
-        context.Services.AddSingleton<IAuthorizationPolicyProvider,
-            PaymentAuthorizationPolicyProvider>();
-
         context.Services.PreConfigure<AbpMvcDataAnnotationsLocalizationOptions>(options =>
         {
             options.AddAssemblyResource(
@@ -373,7 +368,7 @@ public class ApplyModule : AbpModule
         app.UseStaticFiles();
         app.UseRouting();
         app.UseAuthentication();
-        app.UseAbpOpenIddictValidation();
+        //app.UseAbpOpenIddictValidation();
 
         if (IsMultiTenant)
         {

@@ -9,6 +9,7 @@
 @{
     Layout = "~/Themes/Basic/Layouts/application.cshtml";
 }
+@model ACU.Portals.Apply.Pages.Applications.Step3Model
 <div class="container">
 
 
@@ -98,7 +99,7 @@
                             <label for="exampleInputPassword1">Subject 7</label>
                             <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
                         </div>
-                      
+
                     </div>
                     <!-- end fifth column-->
                     <!-- sixth column-->
@@ -111,12 +112,24 @@
                             <label for="exampleInputPassword1">Grade 7</label>
                             <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
                         </div>
-                       
+
                     </div>
                     <!-- end sixth column-->
                 </div>
+                <hr />
+                <div class="row">
+                    <h4>What study programme are you applying for</h4>
+                    <div class="col-md-4">
+                        <abp-input asp-for="Step3.FirstChoice"></abp-input>
+                    </div>
+                    <div class="col-md-4">
+                        <abp-input asp-for="Step3.SecondChoice"></abp-input>
+                    </div>
+                    <div class="col-md-4">
+                        <abp-select asp-for="Step3.StudentEntryMode"></abp-select>
+                    </div>
 
-            </div>
+                </div>
             <!-- /.card-body -->
 
             <div class="card-footer">
